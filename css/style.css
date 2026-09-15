@@ -576,4 +576,9 @@ form{
 	.cont-img-servizio{
 		max-width: 40vw;
 	}
+
+	.titolo-teaser{
+		font-size: var(--dim-h3);
+		padding: 1.5vh 0;
+	}
 }
