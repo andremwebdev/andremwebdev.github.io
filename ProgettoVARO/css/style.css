@@ -1,0 +1,579 @@
+/*-----RESET COMPLETO-----*/
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*-----VARIABILI e FONT-----*/
+
+:root {
+	--sfondo-scuro: #12100d;
+	--sfondo-chiaro: #faf7f2;
+	--testo-chiaro: #f3ede4;
+	--testo-scuro: #1c1a17;
+	--accento: #b8935b;
+	--testo-small: #a39c90;
+	--dim-h1: 3.3rem;
+	--dim-h2: 2.5rem;
+	--dim-h3: 1.8rem;
+	--dim-p: 1.2rem;
+	--dim-small: 0.9rem;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+main {
+	text-align: center;
+}
+
+section {
+	padding-bottom: 2vh;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Fraunces', serif;
+	padding: 15px 5px;
+}
+
+/*-----STILE HEADER-----*/
+
+header {
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro);
+	min-height: 5vh;
+	display: grid;
+	grid-template-columns: 15vw 1fr;
+	position: sticky;
+	top: 0;
+}
+
+.logo-header {
+	font-weight: 800;
+	color: var(--accento);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2vw;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3vw;
+}
+
+.nav-button {
+	display: block;
+	text-decoration: none;
+	color: var(--testo-chiaro);
+	font-size: medium;
+	transition: all 0.3s ease;
+}
+
+.nav-button-select {
+	background-color: var(--accento);
+	border-radius: 8px;
+	padding: 5px 10px;
+}
+
+.nav-button:hover {
+	transform: scale(1.2);
+	transform-origin: center center;
+}
+
+/*-----STILE FOOTER-----*/
+
+footer {
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro);
+	display: grid;
+	grid-template-columns: 1fr 0.7fr 1fr;
+	grid-template-rows: 1fr 3vh;
+	grid-template-areas:
+		'sopra sopra sopra'
+		'sotto sotto sotto';
+	gap: 1vh;
+}
+
+.ft-nav-container{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1vh;
+	margin: 1vh 0;
+}
+
+.ft-nav-element{
+	text-decoration: none;
+	color: var(--testo-chiaro);
+	transition: all 0.3s ease;
+}
+
+.ft-nav-element:hover {
+	transform: scale(1.2);
+	transform-origin: center center;
+}
+
+.sotto {
+	background-color: var(--sfondo-scuro);
+	min-height: 35px;
+	grid-area: sotto;
+}
+
+.contatto{
+	display: inline-block;
+	text-decoration: none;
+	color: var(--testo-chiaro);
+	padding: 4px 0;
+}
+
+/*-----STILE GENERALE-----*/
+
+.small {
+	font-size: var(--dim-small);
+	color: var(--testo-small);
+	text-decoration: none;
+}
+
+p {
+	font-size: var(--dim-p);
+}
+
+li{
+	font-size: var(--dim-p);
+}
+
+h1 {
+	font-size: var(--dim-h1);
+	color: var(--testo-scuro)
+}
+
+h2 {
+	padding-top: 6vh;
+	font-size: var(--dim-h2);
+	
+}
+
+.titolo-accento {
+	color: var(--accento);
+}
+
+h3 {
+	font-size: var(--dim-h3);
+	
+}
+
+.bold{
+	font-weight: 800;
+}
+
+.bottone {
+	background-color: var(--accento);
+	color: var(--testo-scuro);
+	border-radius: 6px;
+	border: none;
+	padding: 2vh 14vw;
+	margin: 2.5vh;
+	font-size: var(--dim-p);
+	transition: all 0.4s ease;
+}
+
+.bottone-small {
+	background-color: var(--accento);
+	color: var(--testo-scuro);
+	border-radius: 6px;
+	border: none;
+	padding: 1vh 7vw;
+	margin: 2.5vh;
+	font-size: var(--dim-p);
+	transition: all 0.4s ease;
+}
+
+.bottone-small:hover{
+	transform: scale(1.2);
+}
+
+.bottone:hover {
+	transform: scale(1.15);
+}
+
+.bottone-grosso {
+	background-color: var(--accento);
+	color: var(--testo-scuro);
+	border-radius: 12px;
+	border: none;
+	padding: 25px 40px;
+	margin: 25px;
+	font-size: 1.5rem;
+	transition: all 0.3s ease;
+}
+
+.bottone-grosso:hover {
+	transform: scale(1.2);
+}
+
+/*-----STILE PER SEZIONE-----*/
+
+/*STILE HERO*/
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--sfondo-chiaro);
+}
+
+.abbordo {
+	max-width: 70vw;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5vh;
+}
+
+.titolone{
+	padding-top: 18vh;
+}
+
+.sottotitolone{
+	line-height: 1.4;
+	padding-top: 1.2rem;
+}
+
+.hero-progetti{
+	margin-bottom: 18vh;
+}
+
+/*STILE PERCHÉ VARO*/
+
+.perché-varo {
+	color: var(--testo-chiaro);
+	background-color: var(--sfondo-scuro);
+}
+
+.why-blocco{
+	display: block;
+	padding: 2.5vh;
+}
+
+/*STILE COSA FACCIO*/
+
+.cosa-faccio {
+	background-color: var(--sfondo-chiaro);
+}
+
+.cards {
+	max-width: 90vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 40px;
+}
+
+.card {
+	max-width: 60vw;
+	padding-bottom: 5px;
+	border: 2px solid;
+	border-radius: 12px;
+	overflow: hidden;
+	min-height: 30vh;
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro);
+	margin: 10px auto;
+	transition: all 0.3s ease-out;
+}
+
+.card:hover{
+	transform: scale(1.1)
+}
+
+.card-img {
+	display: block;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+/*STILE ALCUNI LAVORI*/
+
+.portfolio-teaser {
+	color: var(--testo-chiaro);
+	background-color: var(--sfondo-scuro);
+}
+
+.cards-teaser{
+	display: flex;
+	justify-content: space-around;
+	margin: 4vh 0;
+}
+
+.card-teaser{
+	width: 40vw;
+	border: 4px solid var(--accento);
+	border-radius: 8px;
+}
+
+.img-card-teaser{
+	width:100%;
+}
+
+/*STILE HOMEPAGE CTA*/
+
+.homepage-cta {
+	color: var(--testo-scuro);
+	background-color: var(--sfondo-chiaro);
+}
+
+/*TITOLO SERVIZI*/
+
+.titolo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--sfondo-chiaro);
+}
+
+.titolone-servizi{
+	max-width: 80vw;
+}
+
+/*BLOCCHI VETRINA, PRENOTAZIONI E MANUTENZIONE*/
+
+.blocco-primo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro);
+}
+.blocco-secondo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--sfondo-chiaro);
+	color: var(--testo-scuro);
+}
+.blocco-terzo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro);
+}
+
+.sottotitolo-servizio{
+	margin: 0 10px;
+}
+
+.descrizione{
+	display: inline-block;
+	padding: 2vh;
+}
+
+.span-servizi{
+	font-weight: 800;
+	color: var(--accento);
+	font-size: 1.25rem;
+}
+
+.cont-img-servizio{
+	width: 80vw;
+	border: 2px solid var(--accento);
+	border-radius: 12px;
+}
+
+.img-servizio{
+	display: block;
+	object-fit: contain;
+	width: 100%;
+	border-radius: 12px;
+}
+
+/*SISTEMAZIONE CTA SERVIZI*/
+
+.servizi-cta{
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro);
+}
+
+.bottone-chiaro{
+	color:var(--testo-chiaro);
+}
+
+/*PAGINA PORTFOLIO*/
+
+/*TITOLO*/
+
+.titolone-portfolio{
+	margin: 2vh 0;
+}
+
+.sottotitolo-portfolio{
+	max-width: 90vw;
+	margin-bottom: 3vh;
+}
+
+/*PROGETTI PORTFOLIO*/
+
+.progetto{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro)
+}
+
+.cont-img-portfolio{
+	margin: 3vh 0;
+	max-width: 80vw;
+	border: 3px solid var(--accento);
+	border-radius: 6px;
+}
+
+.img-portfolio{
+	display: block;
+	width:100%;
+	border-radius: 2px;
+}
+
+.p-portfolio{
+	margin: 1vh 4vw;
+}
+
+/*CONTATTI*/
+
+.contatti-diretti{
+	background-color: var(--sfondo-chiaro);
+}
+
+.contatto-chiaro{
+	color:var(--testo-scuro)
+}
+
+.contatto-diretto{
+	display: block;
+	padding: 2vh 0;
+}
+ 
+.form-container{
+	background-color: var(--sfondo-scuro);
+	min-height: 55vh;;
+}
+
+.cont-titolo{
+	padding: 3vh 0;
+}
+
+.sottotitolo-contatti{
+	max-width: 80vw;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1vh;
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro)
+}
+
+.label-nome{
+	display: block;
+	margin-top: 5vh;
+}
+
+#nome{
+	margin-bottom: 1vh;
+}
+
+.label-email{
+	display: block;
+}
+
+#email{
+	margin-bottom: 1vh;
+}
+
+.label-select{
+	display: block;
+}
+
+#select{
+	margin-bottom: 1vh;
+	padding: 0.8vh 2vw;
+	border: 3px solid var(--accento);
+	border-radius: 6px;
+}
+
+.label-domande{
+	display: block;
+}
+
+#domande{
+	display: block;
+	resize: vertical;
+	margin-bottom: 1vh;
+	border: 3px solid var(--accento);
+	border-radius: 6px;
+}
+
+.text-input{
+	padding: 1vh 2.5vw;
+	border: 3px solid var(--accento);
+	border-radius: 6px;
+	transition:all 0.3s ease;
+}
+
+.text-input:focus:valid{
+	border-color: green;
+}
+
+.text-input:focus:invalid{
+	border-color:rgb(183, 3, 3);
+}
+
+/*SEZIONE FAQ*/
+
+.faq{
+	background-color: var(--sfondo-scuro);
+	color: var(--testo-chiaro);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.faq-cont{
+	max-width: 90vw;
+}
+
+.last-faq{
+	padding-bottom: 3vh;
+}
+
+@media (min-width: 992px){
+	.cont-img-portfolio{
+		max-width: 40vw;
+	}
+	
+	.cont-img-servizio{
+		max-width: 40vw;
+	}
+}
