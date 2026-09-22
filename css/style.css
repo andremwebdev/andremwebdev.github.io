@@ -934,6 +934,7 @@ summary::marker{
     .portfolio-p-cont{
         padding-top:7vh;
         display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 10vh;
     }
