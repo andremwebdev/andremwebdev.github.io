@@ -698,6 +698,8 @@ img{
     width: 75%;
     background: var(--blu-gr);
     transition: all 0.3s ease;
+    margin-right: auto;
+    width: fit-content;
 }
 
 .portfolio-p2{
@@ -709,6 +711,8 @@ img{
     width: 75%;
     background: var(--accento-gr);
     transition: all 0.3s ease;
+    margin-left: auto;
+    width: fit-content;
 }
 
 .portfolio-span{
