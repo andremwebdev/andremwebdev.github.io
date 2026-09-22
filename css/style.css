@@ -699,7 +699,7 @@ img{
     margin-bottom: min(10vw, 3rem);
     padding: 1vw;
     border-radius: 5px;
-    align-self: left;
+    align-self: flex-start;
     width: 75%;
     background: var(--blu-gr);
     transition: all 0.3s ease;
@@ -710,7 +710,7 @@ img{
     margin-bottom: 3vw;
     padding: 1vw;
     border-radius: 5px;
-    align-self: right;
+    align-self: flex-end;
     width: 75%;
     background: var(--accento-gr);
     transition: all 0.3s ease;
